@@ -1,0 +1,87 @@
+.custom-select {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-select input {
+  display: none;
+}
+
+.custom-select__preview {
+  position: relative;
+  color: rgba($color: #1a1c1e, $alpha: 0.5);
+}
+
+.custom-select__preview::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 39px;
+  right: 30px;
+  width: 12px;
+  height: 7px;
+  background-image: url('../images/icons/arrow.svg');
+  background-position: center center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  @include lg {
+      top: 35px;
+  }
+  @include md {
+      top: 30px;
+  }
+
+  @include sm {
+      right: 20px;
+      top: 27px;
+  }
+  
+}
+
+.custom-select__list {
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .3s ease-in-out;
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  background-color: var(--light-color);
+  box-shadow: 0 0 10px #00000033;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.custom-select__list.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.custom-select__item {
+  transition: all .3s ease-in-out;
+  box-shadow: 0 0 0 transparent;
+  height: 70px;
+  width: 100%;
+  background-color: #fafbfc;
+  border: 1px solid #f1f1f1;
+  transition: all 0.3s;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(26 / 18 * 100%);
+  color: var(--default-color);
+  padding: 20px 30px;
+
+  @include sm {
+      font-size: 16px;
+  }
+}
+
+.custom-select__item.active,
+.custom-select__item:hover {
+  background-color: var(--primary);
+  box-shadow: 0 0 0 #000;
+  color: var(--light-color);
+  scale: 1.02;
+}

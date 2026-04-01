@@ -1,0 +1,64 @@
+class WheelInSwiper {
+  constructor(element, swiperOption) {
+    this.element = document.querySelector(element);
+    this.swiperOption = swiperOption;
+    this.swiper;
+    this.wheelTimeout;
+
+    this.initWheelSwiper();
+  }
+
+  initWheelSwiper() {
+    if (!this.element) return;
+    this.swiper = new Swiper(this.element, this.swiperOption);
+    this.handleWheel();
+  }
+
+  handleWheel() {
+    this.element.addEventListener(
+      "wheel",
+      function (e) {
+        e.preventDefault();
+
+        clearTimeout(this.wheelTimeout);
+        this.wheelTimeout = setTimeout(() => {
+          if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+            // Вертикальный скролл - игнорируем или конвертируем
+            if (e.deltaY > 20) {
+              this.swiper.slideNext();
+            } else if (e.deltaY < -20) {
+              this.swiper.slidePrev();
+            }
+          }
+        }, 50);
+      },
+      { passive: false }
+    );
+  }
+}
+new WheelInSwiper(".front-block__swiper", {
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  speed: 1500,
+  autoplay: {
+    delay: 200,
+  },
+  // Включаем навигацию для тачпада
+  touchEventsTarget: "container",
+});
+
+new WheelInSwiper(".systemic-process__swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 18,
+  speed: 1000,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+    // Добавляем обработчик drag для скроллбара
+    dragClass: "swiper-scrollbar-drag",
+    hide: false,
+    snapOnRelease: true,
+  },
+  touchEventsTarget: "container",
+});

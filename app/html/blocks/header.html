@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <meta content="images/social.png" property="og:image">
+  <title>Главная страница</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div class="body_wrapper">
+    <header class="header @@class">
+      <div class="container">
+        <div class="header__inner">
+          @@include('../components/logo.html', {"class": "header__logo"})
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link anchor" href="#expertise">
+                  Expertise
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link anchor" href="#global">
+                  Global
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link anchor" href="#process">
+                  Process
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link anchor" href="#why-us">
+                  Why Us
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link anchor" href="#clients">
+                  Clients
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link anchor" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__btn" href="#callback" data-fancybox>
+            Get in touch
+          </a>
+          <div class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="popup-menu">
+      <div class="burger popup-menu__burger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="popup-menu__nav">
+        <ul class="popup-menu__list">
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#expertise">
+              Expertise
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#global">
+              Global
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#process">
+              Process
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#why-us">
+              Why Us
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#clients">
+              Clients
+            </a>
+          </li>
+          <li class="popup-menu__item">
+            <a class="popup-menu__link anchor" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>

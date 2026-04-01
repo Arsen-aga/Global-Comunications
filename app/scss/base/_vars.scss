@@ -1,0 +1,71 @@
+:root {
+  // НЕЛЬЗЯ УДАЛЯТЬ ЭТИ ПЕРЕМЕННЫЕ
+
+  // контейнер
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  // шрифты
+  --font-default: 'Onest';
+  --font-title: "NyghtSerif";
+
+  // размер шрифта
+  --defaul-font-size: 18px;
+  --defaul-line-height: 144%;
+
+  @media (max-width: 468px) {
+    --defaul-font-size: 16px;
+  }
+
+  // брекпоинты
+  --xl: 1230px;
+  --lg: 991.8px;
+  --md: 767.98px;
+  --sm: 575.98px;
+  --xs: 468px;
+
+  // глобаьлные цвета
+  --page-bg: #F3F3F3;
+  --default-color: #191919;
+  --link-color: #191919;
+
+  // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
+
+  --primary: #E5303D;
+  --primary-hover: #F74350;
+  --text-color: var(--default-color);
+  --light-color: #FFFFFF;
+  --gray: #DEDEDE;
+
+
+
+  // Отступы для блоков
+  --indent: 140px;
+  --indent-title: 50px;
+
+  @media (max-width: 1230px) {
+    --indent: 80px;
+    --indent-title: 40px;
+  }
+
+  @media (max-width: 991.8px) {
+    --indent: 40px;
+    --indent-title: 30px;
+  }
+
+  @media (max-width: 767.98px) {
+    --indent-title: 25px;
+  }
+
+  @media (max-width: 575.98px) {
+    --indent-title: 20px;
+  }
+
+
+
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

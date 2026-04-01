@@ -1,0 +1,51 @@
+.popup {
+  max-width: 550px;
+  width: 100%;
+  padding: 0;
+  background-color: var(--light-color);
+  border: none;
+
+  &__form {
+    padding: 50px 45px;
+
+    @include sm {
+      padding: 30px;
+    }
+
+    @include xs {
+      padding: 25px;
+    }
+  }
+
+
+  &__form-title {
+    font-size: 46px;
+    line-height: calc(40/32*100%);
+    margin-bottom: 40px;
+
+    @include xl {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    @include lg {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    @include md {
+      font-size: 30px;
+    }
+  }
+
+  &__form-inner{
+    display: grid;
+    gap: 10px;
+  }
+
+
+}
+
+.fancybox__content:has(iframe) {
+  height: 90% !important;
+}

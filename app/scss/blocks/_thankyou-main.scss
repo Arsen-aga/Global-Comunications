@@ -1,0 +1,27 @@
+.thankyou-main{
+  background-image: url(../images/thankyou-main-bg.webp);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__top{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+
+  &__title{
+    text-align: center;
+    margin-bottom: var(--indent-title);
+  }
+
+  &__btn{
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

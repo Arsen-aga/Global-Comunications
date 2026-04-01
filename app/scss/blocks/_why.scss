@@ -1,0 +1,144 @@
+.why {
+  padding: var(--indent) 0;
+  background-color: var(--light-color);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    border-top: 1px solid #CBD4DD;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s ease-in-out;
+    position: relative;
+    cursor: pointer;
+
+    @include lg {
+      flex-direction: column;
+      padding-left: 40px;
+      gap: 10px;
+    }
+
+    @include md {
+      padding: 30px;
+      gap: 90px;
+    }
+
+    @include sm {
+      gap: 25px;
+      align-items: center;
+      text-align: center;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      background-color: var(--light-color);
+      transition: all .5s ease-in-out;
+      top: 0;
+      left: -40px;
+      right: -40px;
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #CBD4DD;
+    }
+
+    &:active,
+    &:hover {
+      background-color: var(--default-color);
+      color: var(--light-color);
+      border-color: transparent;
+
+      &::before {
+        background-color: var(--default-color);
+      }
+
+      .why__item-pictures {
+        opacity: 1;
+      }
+
+      .why__item-block {
+        rotate: -10deg;
+      }
+
+      .why__item-img {
+        rotate: 10deg;
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 119%;
+    position: relative;
+
+    @include xl {
+      font-size: 30px;
+    }
+
+    @include lg {
+      font-size: 26px;
+    }
+  }
+
+  &__item-pictures {
+    position: absolute;
+    top: 20px;
+    right: 44%;
+    margin: 0 30px 0 auto;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+
+    @include lg {
+      top: 30px;
+      right: 20px;
+    }
+
+    @include sm {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin: 0;
+    }
+  }
+
+  &__item-img,
+  &__item-block {
+    width: 208px;
+    height: 160px;
+    background-color: var(--light-color);
+    border-radius: 14px;
+    transition: all .8s ease-in-out;
+    position: relative;
+
+    @include md {
+      width: 150px;
+      height: 115px;
+    }
+  }
+
+  &__item-img {
+    position: absolute;
+    top: 0;
+  }
+
+  &__item-text {
+    max-width: 500px;
+    position: relative;
+
+    @include xl {
+      max-width: 400px;
+    }
+  }
+}

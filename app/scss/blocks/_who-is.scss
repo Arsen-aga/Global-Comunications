@@ -1,0 +1,122 @@
+.who-is {
+  padding: var(--indent) 0;
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      grid-auto-flow: column;
+      padding-bottom: 10px;
+      overflow-x: auto;
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    min-height: 388px;
+    overflow: hidden;
+    padding: 40px;
+    border: 1px solid #CBD4DD;
+    display: flex;
+    flex-direction: column;
+
+    @include lg {
+        width: 300px;
+        min-height: auto;
+        padding: 30px;
+        br{display: none;}
+    }
+
+    &:nth-child(2n + 3) {
+      background-color: var(--default-color);
+      color: var(--light-color);
+    }
+  }
+
+  &__item-title {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 124%;
+    margin-bottom: auto;
+
+    @include xl {
+      font-size: 30px;
+    }
+
+    @include lg {
+      font-size: 24px;
+    }
+  }
+
+  &__item-info{
+    margin-top: 15px;
+  }
+
+  &__item-list{
+    margin-top: 10px;
+    display: grid;
+    gap: 5px;
+  }
+
+  &__bottom{
+    margin-top: 18px;
+    background-color: var(--primary);
+    color: var(--light-color);
+    padding: 60px 80px;
+
+    @include lg {
+        padding: 40px;
+    }
+
+    @include sm {
+        padding: 30px;
+    }
+  }
+
+  &__bottom-title{
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  &__bottom-inner{
+    margin-top: 22px;
+    justify-content: end;
+    display: flex;
+    gap: 15px;
+
+    @include sm {
+        gap: 10px;
+    }
+  }
+
+  &__bottom-icon{
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    min-height: 46px;
+    
+    @include sm {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      min-height: 32px;
+    }
+  }
+
+  &__bottom-text{
+    margin: 0;
+    text-align: left;
+  }
+}

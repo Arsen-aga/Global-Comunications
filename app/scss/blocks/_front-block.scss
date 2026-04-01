@@ -1,0 +1,165 @@
+.front-block {
+  background-color: var(--default-color);
+  padding-top: 230px;
+
+  @include xl {
+    padding-top: 230px;
+  }
+
+  @include lg {
+    padding-top: 160px;
+  }
+
+  @include sm {
+    padding-top: 120px;
+  }
+
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: var(--light-color);
+    margin: 20px 0 40px;
+
+    @include xl {
+      font-size: 30px;
+      margin-bottom: 35px;
+    }
+
+    @include lg {
+      font-size: 26px;
+      margin: 15px 0 30px;
+    }
+
+    @include md {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    @include sm {
+      font-size: 20px;
+      margin: 10px 0 15px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 10px;
+    max-width: 730px;
+
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    max-width: 380px;
+  }
+
+  &__swiper {
+    margin-top: 40px;
+
+    @include lg {
+      margin-top: 30px;
+    }
+
+    @include md {
+      margin-top: 20px;
+    }
+  }
+
+  &__slide {
+    max-width: 300px;
+
+    @include sm {
+        max-width: 260px;
+    }
+  }
+
+  &__slide-link {
+    display: block;
+    position: relative;
+    padding-bottom: calc(210/300*100%);
+    overflow: hidden;
+
+  }
+
+  &__marquee {
+    margin-top: 40px;
+    padding: 17px 0;
+    background-color: var(--primary);
+
+    @include lg {
+      margin-top: 30px;
+    }
+
+    @include md {
+      margin-top: 20px;
+    }
+  }
+
+  &__marquee-wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    &:hover .marquee {
+      animation-play-state: paused;
+    }
+  }
+
+  &__marquee-items {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    animation: scroll 20s linear infinite;
+  }
+
+  &__marquee-item {
+    position: relative;
+    flex: 0 0 auto;
+    transition: all 0.1s ease-in-out;
+    color: var(--light-color);
+    padding-left: 48px;
+    padding-right: 40px;
+    cursor: pointer;
+
+    @include md {
+        padding-left: 36px;
+        padding-right: 30px;
+    }
+
+    &:hover {
+      color: var(--default-color);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: var(--light-color);
+      rotate: 45deg;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}

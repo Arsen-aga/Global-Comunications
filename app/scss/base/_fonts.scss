@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-Dark.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-Dark.woff") format("woff"),
+       url("../fonts/NyghtSerif-Dark.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-Dark.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-DarkItalic.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-DarkItalic.woff") format("woff"),
+       url("../fonts/NyghtSerif-DarkItalic.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-DarkItalic.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-Bold.otf") format("opentype"),
+       url("../fonts/NyghtSerif-Bold.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-Bold.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-Bold.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-BoldItalic.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-BoldItalic.woff") format("woff"),
+       url("../fonts/NyghtSerif-BoldItalic.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-BoldItalic.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-Medium.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-Medium.woff") format("woff"),
+       url("../fonts/NyghtSerif-Medium.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-Medium.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-MediumItalic.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-MediumItalic.woff") format("woff"),
+       url("../fonts/NyghtSerif-MediumItalic.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-MediumItalic.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-Regular.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-Regular.woff") format("woff"),
+       url("../fonts/NyghtSerif-Regular.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-Regular.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-RegularItalic.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-RegularItalic.woff") format("woff"),
+       url("../fonts/NyghtSerif-RegularItalic.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-RegularItalic.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-Light.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-Light.woff") format("woff"),
+       url("../fonts/NyghtSerif-Light.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-Light.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/NyghtSerif-LightItalic.woff2") format("woff2"),
+       url("../fonts/NyghtSerif-LightItalic.woff") format("woff"),
+       url("../fonts/NyghtSerif-LightItalic.ttf") format("truetype"),
+       url("../fonts/NyghtSerif-LightItalic.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/Onest-Thin.woff2") format("woff2"),
+       url("../fonts/Onest-Thin.woff") format("woff"),
+       url("../fonts/Onest-Thin.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/Onest-ExtraLight.woff2") format("woff2"),
+       url("../fonts/Onest-ExtraLight.woff") format("woff"),
+       url("../fonts/Onest-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Onest-Light.woff2") format("woff2"),
+       url("../fonts/Onest-Light.woff") format("woff"),
+       url("../fonts/Onest-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Onest-Regular.woff2") format("woff2"),
+       url("../fonts/Onest-Regular.woff") format("woff"),
+       url("../fonts/Onest-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Onest-Medium.woff2") format("woff2"),
+       url("../fonts/Onest-Medium.woff") format("woff"),
+       url("../fonts/Onest-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Onest-SemiBold.woff2") format("woff2"),
+       url("../fonts/Onest-SemiBold.woff") format("woff"),
+       url("../fonts/Onest-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Onest-Bold.woff2") format("woff2"),
+       url("../fonts/Onest-Bold.woff") format("woff"),
+       url("../fonts/Onest-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Onest-ExtraBold.woff2") format("woff2"),
+       url("../fonts/Onest-ExtraBold.woff") format("woff"),
+       url("../fonts/Onest-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/Onest-Black.woff2") format("woff2"),
+       url("../fonts/Onest-Black.woff") format("woff"),
+       url("../fonts/Onest-Black.ttf") format("truetype");
+  font-style: normal;
+}

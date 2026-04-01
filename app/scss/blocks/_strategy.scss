@@ -1,0 +1,24 @@
+.strategy {
+  padding: var(--indent) 0;
+  background-image: url('../images/strategy-bg.webp');
+  
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__form{
+    max-width: 600px;
+    margin: 60px auto 0;
+
+    @include xl {
+        margin-top: 0;
+    }
+  }
+
+  &__inputs{
+    display: grid;
+    gap: 7px;
+  }
+  
+}

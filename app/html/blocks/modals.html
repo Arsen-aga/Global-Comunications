@@ -1,0 +1,17 @@
+<div class="popup" id="callback" style="display: none;">
+  <form method="POST" action="#" enctype="multipart/form-data"
+    class="popup__form form form-submit">
+    <input type="hidden" name="from" class="from" value="Get in touch">
+    <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
+    <h2 class="popup__form-title _title">
+      Get in touch
+    </h2>
+    <div class="popup__form-inner">
+      <input class="_input popup__form-inp" type="text" name="name" placeholder="Your name" required>
+      <input class="_input popup__form-inp" type="tel" name="phone" placeholder="Your phone number" required>
+      <button type="submit" class="form__btn popup__btn _main-btn">
+        Submit now
+      </button>
+    </div>
+  </form>
+</div>

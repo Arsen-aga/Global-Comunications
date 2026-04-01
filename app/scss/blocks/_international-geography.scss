@@ -1,0 +1,31 @@
+.international-geography{
+  padding: var(--indent);
+  background-image: url('../images/international-geography-bg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title{
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  &__subtitle{
+    text-align: left;
+  }
+
+  &__text{
+    margin: 440px 0 0 auto;
+    text-align: left;
+    width: fit-content;
+
+    @include xl {
+        margin-top: 300px;
+    }
+
+    @include sm {
+        margin-top: 250px;
+    }
+  }
+  
+}
