@@ -15,7 +15,6 @@ const fileInclude = require("gulp-file-include");
 const scriptsPaths = [
   "node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js",
   "node_modules/swiper/swiper-bundle.min.js",
-  "node_modules/aos/dist/aos.js",
   "app/js/_src/*.js",
 ];
 
