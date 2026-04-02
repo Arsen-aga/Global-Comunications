@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  scrollbar-gutter: stable;
 }
 
 body {
@@ -14,7 +13,6 @@ body {
 }
 
 .body_wrapper {
-  max-width: 1920px;
   margin: 0 auto;
   width: 100% !important;
   position: relative;
@@ -256,4 +254,10 @@ a {
   &::placeholder {
     color: rgba($color: #1a1c1e, $alpha: 0.5);
   }
+}
+
+@media (min-width: 76.875em) {
+   footer, header, main {
+       zoom: 85%;
+   }
 }
