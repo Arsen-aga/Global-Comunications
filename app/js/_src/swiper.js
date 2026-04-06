@@ -16,8 +16,7 @@ class WheelInSwiper {
 
   handleWheel() {
     this.element.addEventListener(
-      "wheel",
-      function (e) {
+      "wheel", (e) => {
         e.preventDefault();
 
         clearTimeout(this.wheelTimeout);
@@ -36,7 +35,7 @@ class WheelInSwiper {
     );
   }
 }
-new WheelInSwiper(".front-block__swiper", {
+new Swiper(".front-block__swiper", {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 10,

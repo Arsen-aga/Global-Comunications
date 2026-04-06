@@ -38,9 +38,20 @@
     }
   }
 
-  &__form-inner{
+  &__form-inner {
     display: grid;
     gap: 10px;
+  }
+
+
+}
+
+#ninety-day {
+  padding: 100px 0;
+  width: 100%;
+
+  @include xl {
+    padding: var(--indent) 0;
   }
 
 
