@@ -4,6 +4,7 @@ class WheelInSwiper {
     this.swiperOption = swiperOption;
     this.swiper;
     this.wheelTimeout;
+    this.conuter= 0;
 
     this.initWheelSwiper();
   }
@@ -21,13 +22,14 @@ class WheelInSwiper {
 
         clearTimeout(this.wheelTimeout);
         this.wheelTimeout = setTimeout(() => {
-          if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-            // Вертикальный скролл - игнорируем или конвертируем
-            if (e.deltaY > 20) {
-              this.swiper.slideNext();
-            } else if (e.deltaY < -20) {
-              this.swiper.slidePrev();
-            }
+          console.log(this.conuter);
+          const treshhold = 3;
+          const delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+
+          if (delta > treshhold) {
+            this.swiper.slideNext();
+          } else if (delta < -treshhold) {
+            this.swiper.slidePrev();
           }
         }, 50);
       },
